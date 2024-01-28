@@ -21,7 +21,10 @@ export const Login = () => {
     <section className="bg-gray-50 min-h-screen flex items-center justify-center">
       <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
         <div className="md:w-1/2 px-8 md:px-16">
+          <div className="flex items-center gap-4">
           <h2 className="font-bold text-2xl text-indigo-400">Login</h2>
+          <Link to='admin' className="font-bold text-2xl text-indigo-400 cursor-pointer">Admin</Link>
+          </div>
           <p className="text-xs my-4 text-[#002D74]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </p>

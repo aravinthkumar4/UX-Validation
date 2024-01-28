@@ -27,7 +27,7 @@ export const Singup = () => {
     <section className="bg-gray-50 min-h-screen flex items-center justify-center">
       <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
         <div className="md:w-1/2 px-8 md:px-16">
-          <h2 className="font-bold text-2xl text-indigo-600">Login</h2>
+          <h2 className="font-bold text-2xl text-indigo-400">Signup</h2>
           <p className="text-xs my-4 text-[#002D74]">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </p>
