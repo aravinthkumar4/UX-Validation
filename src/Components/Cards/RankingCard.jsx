@@ -51,7 +51,7 @@ function RankingCard() {
         </div>
       </div>
       <div class="flow-root">
-        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+        <ul class="divide-y divide-gray-200 dark:divide-gray-700">
           {data?.map((i,idx)=>(<li class="py-3 sm:py-4">
             <div class="flex items-center animate-slidein [--slidein-delay:300ms] opacity-0" key={idx}>
               <div class="flex-shrink-0">
