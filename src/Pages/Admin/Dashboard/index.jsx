@@ -1,10 +1,11 @@
 import React from "react";
 import Sidebar from "../../../Components/Sidebar";
+import Modal from "../../../Components/Modal";
 
 function Dashboard() {
   return (
     <div>
-      <Sidebar />
+      <Sidebar popup={<Modal/>} />
     </div>
   );
 }

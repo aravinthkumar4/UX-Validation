@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import ColumnChart from "../Charts/ColumnChart";
-import Modal from "../Modal";
 import Table from "../Table";
 import RankingCard from "../Cards/RankingCard";
 import { Link } from "react-router-dom";
 
-function Sidebar() {
+function Sidebar({popup}) {
   const [expand, setExpand] = useState(false);
   const sidebarRef = useRef(null);
   const toggleSidebar = () => {
@@ -107,7 +106,7 @@ function Sidebar() {
                 </div>
                 <RankingCard/>
             </div>
-            <Table/>
+            <Table popup={popup}/>
         </div>
       </div>
     </>

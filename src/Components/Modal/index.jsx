@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import Input from "../FormInputs/Input";
 
 function Modal({ children, title, size = "xl" }) {
-  // max-w-sm md:max-w-md lg:max-w-lg
   const sizecss = {
     sm: "max-w-sm",
     md: "max-w-md",
@@ -22,7 +22,7 @@ function Modal({ children, title, size = "xl" }) {
         <>
           <div className="backdrop-blur-md justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-[100] outline-none focus:outline-none">
             <div className={`relative w-full ${sizecss[size]} mx-4`}>
-              <div className="p-4 border-0 rounded-md shadow-lg relative flex flex-col w-full min-h-[50vh] bg-white outline-none focus:outline-none">
+              <div className="p-4 border-0 rounded-md shadow-lg relative flex flex-col w-full min-h-[30vh] bg-white outline-none focus:outline-none">
                 <div className="flex items-start justify-between">
                   <h4 className="text-valuecolor1 font-semibold">
                     {title}
@@ -48,10 +48,15 @@ function Modal({ children, title, size = "xl" }) {
                   </button>
                 </div>
 
-                <div className="relative flex-auto py-4">{children}</div>
+                <div className="relative flex-auto py-4 lg:mt-6">
+                  <div className="grid lg:grid-cols-2 gap-2">
+                    <Input name='Rank' placeholder='Rank' label='Rank' />
+                    <Input name='Feedback' placeholder='Feedback' label='Feedback' />
+                  </div>
+                </div>
                 <div className="flex items-center justify-end gap-8 rounded-b">
-                  <button onClick={closeModal}>Cancel</button>
-                  <button onClick={closeModal}>Submit</button>
+                  <button className="bg-indigo-400 px-4 py-2 rounded-md text-white" onClick={closeModal}>Cancel</button>
+                  <button className="bg-indigo-400 px-4 py-2 rounded-md text-white" onClick={closeModal}>Submit</button>
                 </div>
               </div>
             </div>

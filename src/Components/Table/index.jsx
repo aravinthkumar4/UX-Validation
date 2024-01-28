@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "../Modal";
 import { Link } from "react-router-dom";
 
-function Table() {
+function Table({popup}) {
   const data = [
     {
       name: "John Doe",
@@ -56,7 +56,7 @@ function Table() {
   ];
 
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg animate-slidein [--slidein-delay:500ms] opacity-0">
+    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
           <tr>
@@ -97,7 +97,7 @@ function Table() {
               </td>
               <td className="px-6 py-4">{i?.rank}</td>
               <td className="px-6 py-4">
-                <Modal />
+                {popup}
               </td>
             </tr>
           ))}
