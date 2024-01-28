@@ -44,12 +44,11 @@ function RankingCard() {
         <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
           Ranking
         </h5>
-        <a
-          href="#"
-          class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+        <div
+          class="text-sm font-medium text-blue-600 hover:underline cursor-pointer"
         >
           View all
-        </a>
+        </div>
       </div>
       <div class="flow-root">
         <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">

@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "../Modal";
+import { Link } from "react-router-dom";
 
 function Table() {
   const data = [
@@ -90,9 +91,9 @@ function Table() {
               </th>
               <td className="px-6 py-4">email@windster.com</td>
               <td className="px-6 py-4 text-indigo-400">
-                <a href={i?.url} target="#blank">
+                <Link to={i?.url} target="#blank">
                   {i?.url}
-                </a>
+                </Link>
               </td>
               <td className="px-6 py-4">{i?.rank}</td>
               <td className="px-6 py-4">
@@ -112,61 +113,54 @@ function Table() {
         </span>
         <ul className="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
           <li>
-            <a
-              href="#"
+            <div
               className="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 "
             >
               Previous
-            </a>
+            </div>
           </li>
           <li>
-            <a
-              href="#"
+            <div
               className="flex items-center justify-center px-3 h-8 leading-tight text-blue-600 bg-blue-50 border border-gray-300 hover:bg-gray-100 hover:text-blue-700 "
             >
               1
-            </a>
+            </div>
           </li>
           <li>
-            <a
-              href="#"
+            <div
               className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
             >
               2
-            </a>
+            </div>
           </li>
           <li>
-            <a
-              href="#"
+            <div
               aria-current="page"
               className="flex items-center justify-center px-3 h-8 text-gray-500 border border-gray-300 bg-white hover:bg-blue-100 hover:text-blue-700"
             >
               3
-            </a>
+            </div>
           </li>
           <li>
-            <a
-              href="#"
+            <div
               className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
             >
               4
-            </a>
+            </div>
           </li>
           <li>
-            <a
-              href="#"
+            <div
               className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "
             >
               5
-            </a>
+            </div>
           </li>
           <li>
-            <a
-              href="#"
+            <div
               className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700"
             >
               Next
-            </a>
+            </div>
           </li>
         </ul>
       </nav>
