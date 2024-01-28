@@ -67,8 +67,8 @@ export const Home = () => {
           </h6>
         </div>
       </div>
-      <div className="w-full flex items-center justify-center gap-4 mt-20">
-        <div class="relative h-11 w-[400px] animate-slidein [--slidein-delay:900ms] opacity-0">
+      <div className="w-full flex items-center justify-center flex-wrap gap-4 mt-18">
+        <div class="mx-4 md:mx-0 relative h-11 w-[400px] animate-slidein [--slidein-delay:900ms] opacity-0">
           <input
             type="text"
             name="url"
@@ -79,7 +79,7 @@ export const Home = () => {
             UX Link
           </label>
         </div>
-        <div className="justify-center items-center bg-indigo-500 hover:scale-110 duration-300 cursor-pointer self-center flex gap-0.5 px-4 py-2 rounded-xl">
+        <div className="w-full md:w-20 text-center mx-4 md:mx-0 justify-center items-center bg-indigo-500 hover:scale-110 duration-300 cursor-pointer self-center flex gap-0.5 px-4 py-2 rounded-xl">
           <div className="animate-slidein [--slidein-delay:900ms] opacity-0 text-white text-base font-medium leading-8 grow whitespace-nowrap">
             Submit
           </div>
