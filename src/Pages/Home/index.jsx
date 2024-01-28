@@ -62,14 +62,12 @@ export const Home = () => {
       </div>
       <div className="items-center self-center flex w-[1260px] max-w-full flex-col my-10 px-8 max-md:my-10 max-md:px-5">
         <div className="justify-center text-stone-50 text-center text-2xl leading-7 max-w-[590px] max-md:max-w-full">
-          {/* Powering the world’s best product teams.
-          <br /> */}
           <h6 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-stone-50">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h6>
         </div>
       </div>
-      <div className="w-full flex items-center justify-center gap-4">
+      <div className="w-full flex items-center justify-center gap-4 mt-20">
         <div class="relative h-11 w-[400px] animate-slidein [--slidein-delay:900ms] opacity-0">
           <input
             type="text"
